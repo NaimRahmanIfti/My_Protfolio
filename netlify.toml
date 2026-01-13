@@ -22,9 +22,6 @@
 [context.production]
   command = "npm run build"
   
-[context.production.environment]
-  # Production environment variables
-  NODE_ENV = "production"
 
 # Deploy Preview context: all deploys generated from a pull/merge request
 [context.deploy-preview]
