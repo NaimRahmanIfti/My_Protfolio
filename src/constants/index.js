@@ -1,223 +1,187 @@
 export const myProjects = [
     {
       id: 1,
-      title: "E-commerce Platform",
+      title: "AI Crypto Trader",
       description:
-        "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+        "An AI-powered cryptocurrency trading bot that analyzes market conditions across major exchanges and provides real-time BUY, SELL, or HOLD signals with confidence levels.",
       subDescription: [
-        "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-        "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-        "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-        "Added payment systems, localization, and product filtering for functionality improvements.",
+        "Live trading signals across major exchanges (Kraken, Binance)",
+        "Processes 11 technical indicators (RSI, MACD, Bollinger Bands)",
+        "Automatic risk management with stop-loss/take-profit",
+        "85% accuracy, 2.0 profit factor in backtesting",
       ],
       href: "",
       logo: "",
-      image: "/assets/projects/accessories.jpg",
+      image: "/assets/projects/Ai_Crypto_Trader.png",
       tags: [
         {
           id: 1,
-          name: "C#",
-          path: "/assets/logos/csharp.svg",
+          name: "python",
+          path: "/assets/logos/python.svg",
         },
         {
           id: 2,
-          name: ".Net",
-          path: "/assets/logos/dotnet.svg",
+          name: "streamlit",
+          path: "/assets/logos/Streamlit.svg",
         },
         {
           id: 3,
-          name: "Ef Core",
-          path: "/assets/logos/efcore.png",
+          name: "NumPy",
+          path: "/assets/logos/NumPy.svg",
         },
         {
           id: 4,
-          name: "TailwindCSS",
-          path: "/assets/logos/tailwindcss.svg",
+          name: "Bootstrap",
+          path: "/assets/logos/Bootstrap.svg",
+        },
+        {
+          id: 5,
+          name: "Pandas",
+          path: "/assets/logos/Pandas.svg",
+        },
+        {
+          id: 6,
+          name: "Ploty",
+          path: "/assets/logos/Ploty.svg",
         },
       ],
     },
-    {
-      id: 2,
-      title: "Authentication & Authorization System",
-      description:
-        "A secure authentication and authorization system using Auth0 for seamless user management.",
-      subDescription: [
-        "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-        "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-        "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-        "Connected to a secure SQLite database for user data storage.",
-      ],
-      href: "",
-      logo: "",
-      image: "/assets/projects/auth-system.jpg",
-      tags: [
-        {
-          id: 1,
-          name: "Auth0",
-          path: "/assets/logos/auth0.svg",
-        },
-        {
-          id: 2,
-          name: "React",
-          path: "/assets/logos/react.svg",
-        },
-        {
-          id: 3,
-          name: "SQLite",
-          path: "/assets/logos/sqlite.svg",
-        },
-        {
-          id: 4,
-          name: "TailwindCSS",
-          path: "/assets/logos/tailwindcss.svg",
-        },
-      ],
-    },
+    // {
+    //   id: 2,
+    //   title: "Image Converter",
+    //   description:
+    //     "A secure authentication and authorization system using Auth0 for seamless user management.",
+    //   subDescription: [
+    //     "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
+    //     "Implemented role-based access control (RBAC) for fine-grained user permissions.",
+    //     "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
+    //     "Connected to a secure SQLite database for user data storage.",
+    //   ],
+    //   href: "",
+    //   logo: "",
+    //   image: "/assets/projects/auth-system.jpg",
+    //   tags: [
+    //     {
+    //       id: 1,
+    //       name: "Auth0",
+    //       path: "/assets/logos/auth0.svg",
+    //     },
+    //     {
+    //       id: 2,
+    //       name: "python",
+    //       path: "/assets/logos/python.svg",
+    //     },
+    //     {
+    //       id: 3,
+    //       name: "SQLite",
+    //       path: "/assets/logos/sqlite.svg",
+    //     },
+    //     {
+    //       id: 4,
+    //       name: "Bootstrap",
+    //       path: "/assets/logos/Bootstrap.svg",
+    //     },
+    //     {
+    //       id: 5,
+    //       name: "stripe",
+    //       path: "/assets/logos/stripe.svg",
+    //     }
+    //   ],
+    // },
     {
       id: 3,
-      title: "Blazor Web App",
+      title: "Face Recognition",
       description:
-        "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+        "A real-time face detection and recognition system built with C++ and OpenCV, leveraging Haar Cascade Classifiers for accurate facial feature detection.",
       subDescription: [
-        "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-        "Implemented API interactions using .NET Core for a robust backend.",
-        "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-        "Integrated SQLite for efficient client-side database storage.",
+        "Developed a real-time face detection system using C++ and OpenCV libraries.",
+        "Implemented Haar Cascade Classifier algorithm for efficient facial recognition.",
+        "Optimized detection performance for real-time video stream processing.",
+        "Achieved high accuracy in various lighting conditions and face orientations.",
       ],
       href: "",
       logo: "",
-      image: "/assets/projects/blazor-app.jpg",
-      tags: [
-        {
-          id: 1,
-          name: "Blazor",
-          path: "/assets/logos/blazor.svg",
-        },
-        {
-          id: 2,
-          name: ".NET Core",
-          path: "/assets/logos/dotnetcore.svg",
-        },
-        {
-          id: 3,
-          name: "SQLite",
-          path: "/assets/logos/sqlite.svg",
-        },
-        {
-          id: 4,
-          name: "TailwindCSS",
-          path: "/assets/logos/tailwindcss.svg",
-        },
-      ],
-    },
-    {
-      id: 4,
-      title: "C++ Game Engine",
-      description:
-        "A lightweight C++ game engine designed for 2D and 3D game development.",
-      subDescription: [
-        "Built a powerful rendering engine using OpenGL and C++.",
-        "Developed a physics engine with collision detection and particle effects.",
-        "Implemented a scripting system for easy game customization.",
-        "Optimized performance with multi-threading and efficient memory management.",
-      ],
-      href: "",
-      logo: "",
-      image: "/assets/projects/game-engine.jpg",
+      image: "/assets/projects/Face_Recog.png",
       tags: [
         {
           id: 1,
           name: "C++",
-          path: "/assets/logos/cplusplus.svg",
+          path: "/assets/logos/C++ (CPlusPlus).svg",
         },
         {
           id: 2,
-          name: "C#",
-          path: "/assets/logos/csharp.svg",
+          name: ".OpenCV",
+          path: "/assets/logos/OpenCV.svg",
         },
         {
           id: 3,
-          name: "Git",
-          path: "/assets/logos/git.svg",
+          name: "Cascade Classifier",
+          path: "/assets/logos/cascade-3.svg",
+        },
+        
+      ],
+    },
+    {
+      id: 4,
+      title: "Advanced School Management System",
+      description:
+        "A comprehensive command-line school management system built with Bash scripting on Linux, featuring student and teacher registration, unique ID management, and class scheduling.",
+      subDescription: [
+        "Developed a robust registration system for students and teachers with unique ID generation.",
+        "Implemented class scheduling functionality with automated conflict detection.",
+        "Created validation logic to ensure no duplicate IDs within the same class sessions.",
+        "Built efficient data management using Bash scripting and Linux file system operations.",
+      ],
+      href: "",
+      logo: "",
+      image: "/assets/projects/school_management_system.png",
+      tags: [
+        {
+          id: 1,
+          name: "Bash",
+          path: "/assets/logos/Bash.svg",
         },
         {
-          id: 4,
-          name: "Microsoft",
-          path: "/assets/logos/microsoft.svg",
+          id: 2,
+          name: "Linux",
+          path: "/assets/logos/Linux.svg",
         },
       ],
     },
     {
       id: 5,
-      title: "WordPress Custom Theme",
+      title: "Spam E-mail Detection",
       description:
-        "A fully customizable WordPress theme optimized for performance and SEO.",
+        "A machine learning-based spam email detection system using Python and scikit-learn, comparing Random Forest and Decision Tree classifiers for optimal accuracy.",
       subDescription: [
-        "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-        "Integrated Tailwind CSS for modern styling and UI enhancements.",
-        "Optimized SEO and page speed using Vite.js for fast builds.",
-        "Implemented custom widgets and plugin compatibility for extended functionality.",
+        "Developed and trained machine learning models using Random Forest and Decision Tree algorithms.",
+        "Performed data analysis and visualization using Seaborn to identify spam patterns.",
+        "Implemented model evaluation to compare accuracy metrics between different classifiers.",
+        "Built the entire pipeline in Jupyter Notebook for interactive development and analysis.",
       ],
       href: "",
       logo: "",
-      image: "/assets/projects/wordpress-theme.jpg",
+      image: "/assets/projects/Spam_Email_Detection.png",
       tags: [
         {
           id: 1,
-          name: "WordPress",
-          path: "/assets/logos/wordpress.svg",
+          name: "python",
+          path: "/assets/logos/python.svg",
         },
         {
           id: 2,
-          name: "HTML5",
-          path: "/assets/logos/html5.svg",
+          name: "Seaborn",
+          path: "/assets/logos/seaborn-1.svg",
         },
         {
           id: 3,
-          name: "CSS3",
-          path: "/assets/logos/css3.svg",
+          name: "scikit-learn",
+          path: "/assets/logos/scikit-learn.svg",
         },
         {
           id: 4,
-          name: "Vite.js",
-          path: "/assets/logos/vitejs.svg",
-        },
-      ],
-    },
-    {
-      id: 6,
-      title: "Online Learning Platform",
-      description:
-        "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-      subDescription: [
-        "Built using Blazor WebAssembly for a seamless SPA experience.",
-        "Implemented video streaming with Azure Media Services.",
-        "Added a quiz system with dynamic question generation and real-time grading.",
-        "Integrated Stripe API for secure payment processing.",
-      ],
-      href: "",
-      logo: "",
-      image: "/assets/projects/elearning.jpg",
-      tags: [
-        {
-          id: 1,
-          name: "Blazor",
-          path: "/assets/logos/blazor.svg",
-        },
-        {
-          id: 2,
-          name: "Azure",
-          path: "/assets/logos/azure.svg",
-        },
-        {
-          id: 3,
-          name: "Stripe",
-          path: "/assets/logos/stripe.svg",
-        },
-        {
-          id: 4,
-          name: "TailwindCSS",
-          path: "/assets/logos/tailwindcss.svg",
+          name: "Jupyter-Notebook",
+          path: "/assets/logos/Jupyter.svg",
         },
       ],
     },
@@ -230,13 +194,13 @@ export const myProjects = [
       icon: "/assets/socials/whatsApp.svg",
     },
     {
-      name: "Linkedin",
-      href: "https://www.linkedin.com/in/ali-sanati/",
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/naim-rahman-ifti-950714286/",
       icon: "/assets/socials/linkedIn.svg",
     },
     {
       name: "Instagram",
-      href: "https://www.instagram.com/ali.sanatidev/reels/",
+      href: "https://www.instagram.com/_sh4rp/",
       icon: "/assets/socials/instagram.svg",
     },
   ];
@@ -244,35 +208,17 @@ export const myProjects = [
   export const experiences = [
     {
       title: "Software Developer",
-      job: "Security & Defense Projects",
-      date: "2021-2023",
+      job: "Flash Card Mobile-Application",
+      date: "August,2025 -Present",
       contents: [
-        "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-        "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-        "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-        "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-        "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
-      ],
-    },
-    {
-      title: "Back-End Developer",
-      job: "Car Manufacture",
-      date: "2023-2024",
-      contents: [
-        "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-        "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-        "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-        "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-        "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
-      ],
-    },
-    {
-      title: "Freelance Developer",
-      job: "Self-Employed",
-      date: "2025-Present",
-      contents: [
-        "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-        "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+
+        "Developed a flash card application to aid in learning and memorization techniques.",
+        "Implemented user authentication and data storage using JWT.",
+        "Integrated a backend server for admin managing the application data.",
+        "Designed a responsive UI with Flutter for cross-platform compatibility.",
+        "Integrated swipeable card functionality for an engaging user experience.",
+        "Added analytics to track user progress and improve learning outcomes.",
+
       ],
     },
   ];

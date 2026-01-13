@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
-import { Frameworks } from "../components/Frameworks";
+import { Frameworks } from "../components/FrameWorks";
 
 const About = () => {
   const grid2Container = useRef();
@@ -17,11 +17,9 @@ const About = () => {
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
           <div className="z-10">
-            <p className="headtext">Hi, I'm Naim Rahman Ifti</p>
+            <p className="headtext">Hi, I'm Naim Rahman </p>
             <p className="subtext">
-              A passoinate computer science student and software developer with a
-              knack for creating efficient and scalable solutions. I love coding,
-              learning new technologies, and solving complex problems.
+              A passionate computer science student and software developer with a strong interest in building innovative solutions and learning.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -37,22 +35,17 @@ const About = () => {
             </p>
             <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="GRASP"
+              text="Backend Development"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="SOLID"
+              text="Design Principles"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Design Patterns"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Design Principles"
+              text="Problem Solving"
               containerRef={grid2Container}
             />
             <Card
@@ -62,17 +55,22 @@ const About = () => {
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/csharp-pink.png"
+              image="assets/logos/python.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/dotnet-pink.png"
+              image="assets/logos/FastAPI.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/blazor-pink.png"
+              image="assets/logos/Flask.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-55deg", top: "30%", left: "5%" }}
+              image="assets/logos/The Algorithms.svg"
               containerRef={grid2Container}
             />
           </div>
@@ -82,7 +80,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based in California, and open to remote work worldwide
+              I'm based in Fremont,California and open to remote work worldwide
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">
@@ -103,7 +101,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headText">Teck Stack</p>
             <p className="subtext">
-              I specialize in a variety of languages(e.g. Python, C & C ++, Java, JavaScript), frameworks, and tools that
+              I specialize in a variety of languages, frameworks, and tools that
               allow me to build robust and scalable applications
             </p>
           </div>

@@ -1,9 +1,7 @@
 "use client";
-
 import createGlobe from "cobe";
 import { useMotionValue, useSpring } from "motion/react";
-import { useEffect, useRef } from "react";
-
+import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 const MOVEMENT_DAMPING = 1400;
@@ -37,12 +35,12 @@ const GLOBE_CONFIG = {
 };
 
 export function Globe({ className, config = GLOBE_CONFIG }) {
-  let phi = 0;
-  let width = 0;
   const canvasRef = useRef(null);
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
-
+  const phiRef = useRef(0);
+  const [canvasWidth, setCanvasWidth] = useState(600);
+  
   const r = useMotionValue(0);
   const rs = useSpring(r, {
     mass: 1,
@@ -66,38 +64,55 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
   };
 
   useEffect(() => {
+    if (!canvasRef.current) return;
+
     const onResize = () => {
       if (canvasRef.current) {
-        width = canvasRef.current.offsetWidth;
+        setCanvasWidth(canvasRef.current.offsetWidth);
       }
     };
-
+    
     window.addEventListener("resize", onResize);
     onResize();
 
-    const globe = createGlobe(canvasRef.current, {
-      ...config,
-      width: width * 2,
-      height: width * 2,
-      onRender: (state) => {
-        if (!pointerInteracting.current) phi += 0.005;
-        state.phi = phi + rs.get();
-        state.width = width * 2;
-        state.height = width * 2;
-      },
-    });
+    let globe;
+    
+    try {
+      globe = createGlobe(canvasRef.current, {
+        ...config,
+        width: canvasWidth * 2,
+        height: canvasWidth * 2,
+        onRender: (state) => {
+          if (!pointerInteracting.current) {
+            phiRef.current += 0.005;
+          }
+          state.phi = phiRef.current + rs.get();
+          state.width = canvasWidth * 2;
+          state.height = canvasWidth * 2;
+        },
+      });
 
-    setTimeout(() => (canvasRef.current.style.opacity = "1"), 0);
+      setTimeout(() => {
+        if (canvasRef.current) {
+          canvasRef.current.style.opacity = "1";
+        }
+      }, 0);
+    } catch (error) {
+      console.error("Error creating globe:", error);
+    }
+
     return () => {
-      globe.destroy();
+      if (globe) {
+        globe.destroy();
+      }
       window.removeEventListener("resize", onResize);
     };
-  }, [rs, config]);
+  }, [canvasWidth, rs, config]);
 
   return (
     <div
       className={twMerge(
-        "mx-auto aspect-[1/1] w-full max-w-[600px]",
+        "mx-auto aspect-square w-full max-w-[600px]",
         className
       )}
     >

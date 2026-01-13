@@ -1,6 +1,6 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
-import ParallaxBackground from "../components/parallaxBackground";
+import ParallaxBackground from "../components/ParallaxBackground";
 import { Astronaut } from "../components/Astronaut";
 import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
@@ -17,17 +17,14 @@ const Hero = () => {
       <figure
         className="absolute inset-0"
         style={{ width: "100vw", height: "100vh" }}
-        gl={{ preserveDrawingBuffer: true }}
-    
       >
         <Canvas camera={{ position: [0, 1, 3] }}>
           <Suspense fallback={<Loader />}>
             <Float>
-              <Astronaut 
-                position={isMobile && [0, -1, 0]}
-                scale={isMobile && 0.2}
+              <Astronaut
+                scale={isMobile && 0.23}
+                position={isMobile && [0, -1.5, 0]}
               />
-              
             </Float>
             <Rig />
           </Suspense>

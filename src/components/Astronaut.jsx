@@ -37,7 +37,7 @@ export function Astronaut(props) {
       {...props}
       dispose={null}
       rotation={[-Math.PI / 2, -0.2, 2.2]}
-      scale={props.scale || 0.26}
+      scale={props.scale || 0.3}
       position={props.position || [1.3, -1, 0]}
     >
       <group name="Sketchfab_Scene">
